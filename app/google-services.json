@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "406276263098",
+    "project_id": "pagabus-a3aa7",
+    "storage_bucket": "pagabus-a3aa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406276263098:android:393df04c9449a9ec3f4683",
+        "android_client_info": {
+          "package_name": "com.example.pagabus2v"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqwMTSDBXzosNunCjp3XXpCAJNkvPSrVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

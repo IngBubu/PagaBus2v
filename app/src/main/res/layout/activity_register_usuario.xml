@@ -7,8 +7,8 @@
     tools:context=".RegisterUsuario">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="348dp"
-        android:layout_height="381dp"
+        android:layout_width="351dp"
+        android:layout_height="426dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
@@ -17,7 +17,7 @@
 
         <LinearLayout
             android:layout_width="350dp"
-            android:layout_height="match_parent"
+            android:layout_height="430dp"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -57,9 +57,22 @@
                 android:minHeight="48dp"
                 app:endIconMode="password_toggle" />
 
-            <Space
-                android:layout_width="332dp"
-                android:layout_height="24dp" />
+            <LinearLayout
+                android:id="@+id/terminosCondiciones"
+                android:layout_width="335dp"
+                android:layout_height="42dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbAcept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acepto"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/btnRegistrar"
@@ -70,6 +83,8 @@
                 android:text="@string/registrame"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

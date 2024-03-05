@@ -24,4 +24,9 @@
     <string name="correo">Correo</string>
     <string name="contrase_a">Contraseña</string>
     <string name="registrame">Registrame</string>
+    <string name="TyCacepto">He leido y acepto los terminos y condiciones de uso</string>
+    <string name="acepto">Acepto los Teminos y Condiciones de uso</string>
+
+    <string name="google">GOOGLE</string>
+    <string name="facebook">FACEBOOK</string>
 </resources>

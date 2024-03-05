@@ -24,11 +24,11 @@ android:background="@color/white">
         tools:src="@drawable/logopagabus" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/olvidasteContraseña"
         android:layout_width="280dp"
         android:layout_height="25dp"
         android:layout_marginTop="8dp"
-        android:text="¿Olvidaste tu contraseña? Contactanos"
+        android:text="¿Olvidaste tu contraseña?"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,11 +62,9 @@ android:background="@color/white">
             android:layout_height="62dp"
             android:layout_marginTop="36dp"
             app:endIconMode="clear_text"
-            app:layout_constraintBottom_toTopOf="@+id/Contraseña"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editCorreo"
@@ -77,23 +75,54 @@ android:background="@color/white">
 
         <Button
             android:id="@+id/btnIniciarSesion"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_width="285dp"
+            android:layout_height="51dp"
             android:backgroundTint="#03A9F4"
             android:onClick="irMenu"
             android:text="@string/iniciar_sesion"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/txtNotTienesCuenta"
+            app:layout_constraintBottom_toTopOf="@+id/btnIniciarconGoogle"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintHorizontal_bias="0.439"
             app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/btnIniciarconGoogle"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#9b9b9b"
+            android:drawableLeft="@drawable/googleg_standard_color_18"
+            android:paddingLeft="30dp"
+            android:text="@string/google"
+            android:textAlignment="textStart"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnIniciarconFacebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnIniciarconFacebook"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9b9b9b"
+            android:drawableLeft=""
+            android:paddingLeft="30dp"
+            android:text="@string/facebook"
+            android:textAlignment="textStart"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="292dp" />
 
         <Button
             android:id="@+id/btnRegistrarse"
             android:layout_width="200dp"
             android:layout_height="100dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="4dp"
             android:backgroundTint="#03A9F4"
             android:onClick="irRegistro"
             android:text="@string/crear_cuenta"
@@ -101,6 +130,7 @@ android:background="@color/white">
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -120,11 +150,11 @@ android:background="@color/white">
             android:id="@+id/Contraseña"
             android:layout_width="294dp"
             android:layout_height="62dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="15dp"
             app:endIconMode="password_toggle"
-            app:layout_constraintBottom_toTopOf="@+id/btnIniciarSesion"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Correo">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editContraseña"
