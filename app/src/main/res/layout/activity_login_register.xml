@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9c9c9c"
+    tools:context=".LoginRegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logotexto" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="@string/BienvenidaLogin"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Correo"
+        style="@style/viewCorreoContraseña"
+        android:layout_marginTop="36dp"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCorreo"
+            style="@style/viewCorreoContraseña"
+            android:hint="Correo" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Contraseña"
+        style="@style/viewCorreoContraseña"
+        android:layout_marginTop="5dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editContraseña"
+            style="@style/viewCorreoContraseña"
+            android:hint="Contraseña" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        style="@style/viewCustom"
+        android:backgroundTint="#03A9F4"
+        android:onClick="irMenu"
+        android:text="@string/iniciar_sesion"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtContraOlvidada"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingTop="0dp"
+        android:gravity="center_horizontal"
+        android:text="@string/passwordOlvidada"
+        android:textSize="15sp"
+        android:onClick="olvidaContra"/>
+
+    <LinearLayout
+        android:id="@+id/lyTerminos"
+        style="@style/viewCustom"
+        android:orientation="horizontal"
+        android:background="">
+
+        <CheckBox
+            android:id="@+id/cbAcepto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leidoAcepto"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTerminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="irTerminos"
+            android:text="@string/terminosYcondiciones"
+            android:textColor="#FF32CD32"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnIniciarconGoogle"
+        style="@style/viewCustom"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#7d8471"
+        android:drawableLeft="@drawable/googleg_standard_color_18"
+        android:paddingLeft="30dp"
+        android:text="@string/google"
+        android:textAlignment="textStart"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarconFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIniciarconFacebook"
+        style="@style/viewCustom"
+        android:backgroundTint="#7d8471"
+        android:drawableLeft=""
+        android:paddingLeft="30dp"
+        android:text="@string/facebook"
+        android:textAlignment="textStart"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="292dp" />
+
+
+
+
+</LinearLayout>

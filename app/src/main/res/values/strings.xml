@@ -29,4 +29,8 @@
 
     <string name="google">GOOGLE</string>
     <string name="facebook">FACEBOOK</string>
+    <string name="BienvenidaLogin">Transportandote con Facilidad</string>
+    <string name="passwordOlvidada">¿Olvidaste tu contraseña?</string>
+    <string name="leidoAcepto">He leido y acepto</string>
+    <string name="terminosYcondiciones">los terminos y condiciones</string>
 </resources>

@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.pagabus2v" />
+                  <option name="mobileSdkAppId" value="1:406276263098:android:393df04c9449a9ec3f4683" />
+                  <option name="projectId" value="pagabus-a3aa7" />
+                  <option name="projectNumber" value="406276263098" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
