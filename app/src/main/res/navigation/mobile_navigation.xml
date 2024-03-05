@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.pagabus2v.ui.Inicio.InicioFragment"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_Cuenta"
+        android:name="com.example.pagabus2v.ui.Cuenta.CuentaFragment"
+        android:label="@string/cuenta"
+        tools:layout="@layout/fragment_cuenta" />
+
+    <fragment
+        android:id="@+id/nav_BuscarRuta"
+        android:name="com.example.pagabus2v.ui.BuscarRuta.BuscarRutaFragment"
+        android:label="@string/buscar_ruta"
+        tools:layout="@layout/fragment_buscar_ruta" />
+    <fragment
+        android:id="@+id/nav_Saldo"
+        android:name="com.example.pagabus2v.ui.Saldo.SaldoFragment"
+        android:label="@string/saldo"
+        tools:layout="@layout/fragment_saldo" />
+    <fragment
+        android:id="@+id/nav_Descuento"
+        android:name="com.example.pagabus2v.ui.Descuento.DescuentoFragment"
+        android:label="@string/descuento"
+        tools:layout="@layout/fragment_descuento" />
+    <fragment
+        android:id="@+id/nav_SobreNosotros"
+        android:name="com.example.pagabus2v.ui.SobreNosotros.SobreNosotrosFragment"
+        android:label="@string/sobre_nosotros"
+        tools:layout="@layout/fragment_sobre_nosotros" />
+</navigation>

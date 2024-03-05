@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/home"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_Cuenta"
+            android:icon="@drawable/cuenta"
+            android:title="@string/cuenta" />
+        <item
+            android:id="@+id/nav_BuscarRuta"
+            android:icon="@drawable/buscar"
+            android:title="@string/buscar_ruta" />
+        <item
+            android:id="@+id/nav_Saldo"
+            android:icon="@drawable/saldo"
+            android:title="@string/saldo" />
+        <item
+            android:id="@+id/nav_Descuento"
+            android:icon="@drawable/descuento"
+            android:title="@string/descuento" />
+        <item
+            android:id="@+id/nav_SobreNosotros"
+            android:icon="@drawable/info"
+            android:title="@string/sobre_nosotros" />
+
+    </group>
+</menu>
