@@ -53,7 +53,7 @@
         android:id="@+id/btnIniciarSesion"
         style="@style/viewCustom"
         android:backgroundTint="#03A9F4"
-        android:onClick="irMenu"
+        android:onClick="login"
         android:text="@string/iniciar_sesion"
         android:textSize="24sp"
         android:textStyle="bold"/>
@@ -71,8 +71,7 @@
     <LinearLayout
         android:id="@+id/lyTerminos"
         style="@style/viewCustom"
-        android:orientation="horizontal"
-        android:background="">
+        android:orientation="horizontal">
 
         <CheckBox
             android:id="@+id/cbAcepto"
@@ -98,10 +97,11 @@
         android:id="@+id/btnIniciarconGoogle"
         style="@style/viewCustom"
         android:layout_marginBottom="12dp"
-        android:backgroundTint="#7d8471"
+        android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/googleg_standard_color_18"
         android:paddingLeft="30dp"
         android:text="@string/google"
+        android:textColor="@color/black"
         android:textAlignment="textStart"
         android:textSize="13dp"
         app:layout_constraintBottom_toTopOf="@+id/btnIniciarconFacebook"
@@ -112,17 +112,13 @@
     <Button
         android:id="@+id/btnIniciarconFacebook"
         style="@style/viewCustom"
-        android:backgroundTint="#7d8471"
-        android:drawableLeft=""
+        android:backgroundTint="@color/white"
         android:paddingLeft="30dp"
         android:text="@string/facebook"
+        android:textColor="@color/black"
         android:textAlignment="textStart"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="292dp" />
-
-
-
-
 </LinearLayout>
