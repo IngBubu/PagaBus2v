@@ -25,3 +25,5 @@ Cierre de sesion 👀
 //Falta ver que si funcione de la forma en la que lo implemente en el NavBar
 
 Validar Correo y Contraseña 🧑‍💻
+
+NO MARCA ERROR EN IDE PERO TRUENA
