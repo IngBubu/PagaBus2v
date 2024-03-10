@@ -1,7 +1,9 @@
 package com.example.pagabus2v
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -11,7 +13,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.pagabus2v.LoginRegisterActivity.Companion.userEmail
 import com.example.pagabus2v.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        Toast.makeText(this, "Bienvenido $userEmail", Toast.LENGTH_SHORT).show()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -51,5 +57,15 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun CerrarSesion(view: NavigationView){
+        cerrarSesion()
+    }
+    private fun cerrarSesion(){
+        userEmail= ""
+
+        FirebaseAuth.getInstance().signOut()
+        startActivity(Intent(this, LoginRegisterActivity::class.java))
     }
 }

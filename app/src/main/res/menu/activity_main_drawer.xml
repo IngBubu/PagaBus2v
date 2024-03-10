@@ -29,6 +29,12 @@
             android:id="@+id/nav_SobreNosotros"
             android:icon="@drawable/info"
             android:title="@string/sobre_nosotros" />
+        <item
+            android:id="@+id/cerrarSesion"
+            android:icon="@drawable/cerrarsesion"
+            android:title="@string/CerrarSesion"
+            android:onClick="cerrarSesion"/>
 
     </group>
+
 </menu>
