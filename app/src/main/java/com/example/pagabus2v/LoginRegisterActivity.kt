@@ -48,21 +48,25 @@ class LoginRegisterActivity : AppCompatActivity() {
         loginUser()
     }
     private fun loginUser(){
-        email= etEmail.text.toString()
+        email = etEmail.text.toString()
         contraseña = etContraseña.text.toString()
         mAuth.signInWithEmailAndPassword(email, contraseña)
-            .addOnCompleteListener(this){task->
-                if(task.isSuccessful) irInicio(email, "email")
-                else{
-                    if(lyTerminos.visibility == View.INVISIBLE) lyTerminos.visibility= View.VISIBLE
-                    else{
-                        var cbAcept= findViewById<CheckBox>(R.id.cbAcepto)
-                        if (cbAcept.isChecked) register()
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                   irInicio(email, "email")
+                } else {
+                    if (lyTerminos.visibility == View.INVISIBLE) {
+                        lyTerminos.visibility = View.VISIBLE
+                    } else {
+                        var cbAcept = findViewById<CheckBox>(R.id.cbAcepto)
+                        if (cbAcept.isChecked) {
+                            register()
+                        }
                     }
                 }
             }
-
     }
+
     private fun irInicio(email: String, provider: String){
 
         userEmail = email
@@ -73,10 +77,8 @@ class LoginRegisterActivity : AppCompatActivity() {
 
     }
     private fun register(){
-
         email= etEmail.text.toString()
         contraseña = etContraseña.text.toString()
-
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, contraseña)
             .addOnCompleteListener{
                 if (it.isSuccessful){
@@ -87,8 +89,7 @@ class LoginRegisterActivity : AppCompatActivity() {
                         "Usuarios" to userEmail,
                         "FechaDeRegistro" to fechaRegistro
                     ))
-
-                    irInicio(email, "Correo")
+                             irInicio(email, "Correo")
                 }
                 else Toast.makeText(this, "Error, algo salio mal", Toast.LENGTH_SHORT).show()
             }
@@ -112,4 +113,8 @@ class LoginRegisterActivity : AppCompatActivity() {
         else Toast.makeText(this,"Introduzca un Correo", Toast.LENGTH_SHORT).show()
     }
     }
+
+
+
+
 
