@@ -59,13 +59,4 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    fun CerrarSesion(view: NavigationView){
-        cerrarSesion()
     }
-    private fun cerrarSesion(){
-        userEmail= ""
-
-        FirebaseAuth.getInstance().signOut()
-        startActivity(Intent(this, LoginRegisterActivity::class.java))
-    }
-}
